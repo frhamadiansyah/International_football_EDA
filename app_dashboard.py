@@ -101,8 +101,7 @@ def show_graph(n_clicks, x1, x2):
     Output(component_id = 'rival-form', component_property = 'children'),
     [Input(component_id = 'rival-search', component_property = 'n_clicks')],
     [State(component_id = 'choose-country', component_property = 'value'),
-    State(component_id = 'rival-input', component_property = 'value')]
-)
+    State(component_id = 'rival-input', component_property = 'value')])
 
 def show_graph(n_clicks, x1, x2):
     rival_table = showrivaldataframe(football, x1, x2)
